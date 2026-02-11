@@ -1,0 +1,29 @@
+{
+  "name": "lpfs_online_quiz_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abey1/LPFS_online_quiz_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/abey1/LPFS_online_quiz_backend/issues"
+  },
+  "homepage": "https://github.com/abey1/LPFS_online_quiz_backend#readme",
+  "dependencies": {
+    "@google/genai": "^1.40.0",
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1"
+  }
+}
