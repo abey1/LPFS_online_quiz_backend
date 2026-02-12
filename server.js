@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.post("/generate-quiz", async (req, res) => {
   try {
-    console.log("Has key?", Boolean(process.env.GEMINI_API_KEY));
+    // console.log("Has key?", Boolean(process.env.GEMINI_API_KEY));
     const { topic = "JavaScript", difficulty = "medium", count = 5 } = req.body;
 
     // const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
@@ -27,13 +27,13 @@ app.post("/generate-quiz", async (req, res) => {
     Create ${count} multiple choice questions about "${topic}".
     Difficulty: ${difficulty}.
     Return ONLY valid JSON in this format:
+    Make the first choice the correct answer in all the questions.
 
     {
       "questions": [
         {
           "question": "",
           "choices": ["", "", "", ""],
-          "answerIndex": 0,
           "explanation": ""
         }
       ]
