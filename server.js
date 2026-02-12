@@ -28,10 +28,12 @@ app.post("/generate-quiz", async (req, res) => {
     Difficulty: ${difficulty}.
     Return ONLY valid JSON in this format:
     Make the first choice the correct answer in all the questions.
+    give it id of random numbers of length 5 digits.
 
     {
       "questions": [
         {
+          "id": 12345,
           "question": "",
           "choices": ["", "", "", ""],
           "explanation": ""
